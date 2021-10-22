@@ -4,6 +4,7 @@ import About from './COMPONENTS/About'
 import Exp from './COMPONENTS/Exp'
 import Projects from './COMPONENTS/Projects'
 import Contact from './COMPONENTS/Contact'
+import Footer from './COMPONENTS/Footer'
 function App() {
   return (
     <div className="App text-indigo-50 font-semibold">
@@ -16,6 +17,7 @@ function App() {
         <Exp />
         <Projects />
         <Contact />
+        <Footer />
       </div>
     </div>
   )

@@ -60,7 +60,7 @@ function Projects() {
                 <div className="grid grid-cols-3 gap-6">
                     {proAry.map((val, i) => {
                         return (
-                            <div className="bg-indigo-900 p-6 rounded shadow-sm flex flex-col">
+                            <div className="bg-indigo-900 bg-opacity-70 p-6 rounded shadow-sm flex flex-col">
                                 <h5 className="text-indigo-100 text-2xl">{val.name}</h5>
                                 <div className="inline-flex gap-x-4 text-sm text-indigo-100 mb-4 mt-2">
                                     {val.git && <a
