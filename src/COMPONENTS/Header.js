@@ -2,7 +2,7 @@ import React from 'react'
 const data = [
     {
         n: 'I.',
-        p: 'Abount'
+        p: 'About'
     },
     {
         n: 'II. ',
@@ -26,9 +26,11 @@ function Header() {
                     {
                         data.map((val, i) => {
                             return (
-                                <li key={i} className="inline-flex gap-x-2 cursor-pointer">
-                                    <span className="text-green-300">{val.n}</span>
-                                    <p className="text-indigo-300">{val.p}</p>
+                                <li key={i} className="inline-flex gap-x-2 cursor-pointer font-pop">
+                                    <span className="text-green-300">[</span>
+                                    <p className="text-indigo-50">{val.p}</p>
+                                    <span className="text-green-300">]</span>
+
                                 </li>
                             )
                         })

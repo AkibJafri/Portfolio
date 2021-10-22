@@ -33,28 +33,29 @@ function Hero() {
         }
     }, [index, who])
     return (
-        <div className="flex flex-col 2xl:flex-row gap-y-8 bg-indigo-900 p-20 mt-20 bg-opacity-30 rounded-md shadow-sm mx-auto transition-all
+        <div className="flex flex-col xl:flex-row 2xl:flex-row gap-y-8 bg-indigo-900 p-20 mt-20 bg-opacity-30 rounded-md shadow-sm mx-auto transition-all
         ">
 
-            <div id='hero' className="flex flex-col gap-y-4 ">
-                <p className="font-tech font text-green-300 text-lg"
-                >Namaste _/\_ Myself </p>
-                <h1 className="font-bold text-7xl text-indigo-100 ">Sohail Jafri.</h1>
-                <h2 id='whoim' className="font-bold text-6xl text-green-300 transition-all ease duration-500">
+            <div id='hero' className="flex flex-col gap-y-4 max-w-3xl">
+                <p className="font-pop text-green-300 text-lg"
+                >Namaste _/\_  <span className="text-indigo-50"> Myself </span> </p>
+                <h1 className="font-bold text-6xl text-indigo-100 font-pop">
+                    Sohail Jafri.</h1>
+                <h2 id='whoim' className="font-bold text-5xl text-green-300 transition-all ease duration-500 font-pop">
                     {who}
                 </h2>
 
-                <p className="max-w-2xl text-lg text-indigo-300 my-8">
-                    Currently I'm a Thrid Year IT Engineering Student at Datta Mehge College of Engineering. I love building fun and dymanic websites using
+                <p className="max-w-2xl text-lg text-indigo-300 my-4">
+                    Currently I'm a Third Year IT Engineering Student at Datta Meghe College of Engineering. I love building fun and dynamic websites using
                     <span className="text-green-300"> React.js </span>
                     and other open source libraries.</p>
-                <button className="border-2 inline-flex w-44 p-2 items-center justify-center rounded-sm border-green-300  text-indigo-100 hover:bg-opacity-10 hover:bg-green-300 ">
+                <button className="border-4 inline-flex w-44 p-2 items-center justify-center rounded-sm border-green-300  text-indigo-100 hover:bg-opacity-10 hover:bg-green-300 ">
                     <MdOutlineFileDownload size={25} className="mr-3 text-indigo-100 " />
                     Download CV
                 </button>
             </div>
             <img id="heroSvg"
-                className="mx-auto 2xl:ml-auto 2xl:mr-0 object-contain h-80 w-auto"
+                className="mx-auto xl:mr-0 2xl:mr-0 object-contain h-64 w-auto"
                 src={heroSvg} alt="hero gif" />
 
 

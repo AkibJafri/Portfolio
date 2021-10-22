@@ -11,8 +11,8 @@ module.exports = {
                 '2xl': { 'min': '1680px' },
             },
             fontFamily: {
-                'sans': ['Work Sans', 'sans-serif'],
-                'pop': ['Poppins', 'Roboto', 'Arial', 'sans-serif'],
+                'sans': ['Red Hat Display', 'sans-serif'],
+                'pop': ['Rubik', 'Roboto', 'Arial', 'sans-serif'],
                 'tech': ['Share Tech Mono', 'cursive'],
             }
         },
