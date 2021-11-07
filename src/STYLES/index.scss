@@ -20,5 +20,20 @@ a {
     @apply cursor-pointer
 }
 
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #6EE7B7 #312E81;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        background-color: #312E81;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #6EE7B7;
+    }
+}
 
 /*# sourceMappingURL=index.css.map */

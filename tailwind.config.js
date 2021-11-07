@@ -14,6 +14,8 @@ module.exports = {
                 'sans': ['Red Hat Display', 'sans-serif'],
                 'pop': ['Rubik', 'Roboto', 'Arial', 'sans-serif'],
                 'tech': ['Share Tech Mono', 'cursive'],
+            },
+            scale: {
             }
         },
     },

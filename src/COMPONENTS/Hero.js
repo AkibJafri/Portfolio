@@ -38,10 +38,10 @@ function Hero() {
 
             <div id='hero' className="flex flex-col gap-y-4 max-w-3xl">
                 <p className="font-pop text-green-300 text-lg"
-                >Namaste _/\_  <span className="text-indigo-50"> Myself </span> </p>
+                >Namaste 🙏  <span className="text-indigo-50"> Myself </span> </p>
                 <h1 className="font-bold text-6xl text-indigo-100 font-pop">
                     Sohail Jafri.</h1>
-                <h2 id='whoim' className="font-bold text-5xl text-green-300 transition-all ease duration-500 font-pop">
+                <h2 id='whoim' className=" h-28 font-bold text-5xl text-green-300 transition-all ease duration-500 font-pop">
                     {who}
                 </h2>
 

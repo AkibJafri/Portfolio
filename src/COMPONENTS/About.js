@@ -1,10 +1,10 @@
 import React from 'react'
 import {
     SiTailwindcss, SiReact, SiExpress, SiMongodb, SiAdobexd, SiAdobeillustrator, SiAdobephotoshop,
-    SiFrontendmentor
+    SiFrontendmentor, SiLinkedin, SiGithub, SiInstagram, SiTwitter
 } from 'react-icons/si'
-import { FaSass, FaHtml5, FaServer, FaNodeJs, FaFigma, } from 'react-icons/fa'
-import { FiInstagram, FiGithub } from 'react-icons/fi'
+import { FaSass, FaHtml5, FaServer, FaNodeJs, FaFigma, FaLinkedin } from 'react-icons/fa'
+import { FiInstagram, FiGithub, FiLinkedin } from 'react-icons/fi'
 import { MdOutlineWeb, MdSettings, MdDesignServices } from 'react-icons/md'
 import { HiServer } from 'react-icons/hi'
 
@@ -21,11 +21,11 @@ function About() {
                 <p>
                     Hello! My name is Sohail and I enjoy creating everything web.
                     I started my web developer journey back in 2020 when I was working for my junior college capstone project which was
-                    <span className="text-green-300"><br /> "Online Lawyer Appointment Portal"</span>.
+                    <span className="text-green-300 whitespace-nowrap"> "Online Lawyer Appointment Portal"</span>.
                 </p>
                 <p>
                     Since then I have learned many things building and experimenting with websites and web apps via challenges from
-                    <a href="https://www.frontendmentor.io/profile/thesohailjafri" target="_blank" className="text-green-300"> frontendmentor.io</a> and web-development tutorials.
+                    <a href="https://www.frontendmentor.io/profile/thesohailjafri" target="_blank" className="text-green-300"> frontendmentor.io</a> and personal projects.
                 </p>
                 <p className="">
                     Here's my <span className="text-green-300">stack</span> info if you're interested:
@@ -78,8 +78,12 @@ function About() {
                 </div>
                 <div className="flex justify-center gap-x-6 mt-10 text-green-300">
                     <a href="https://www.frontendmentor.io/profile/thesohailjafri" target="_blank"><SiFrontendmentor size={30} className="cursor-pointer hover:text-indigo-100" /></a>
-                    <a href="https://www.instagram.com/thesohailjafri/" target="_blank"><FiInstagram size={30} className="cursor-pointer hover:text-indigo-100" /></a>
-                    <a href="https://github.com/thesohailjafri" target="_blank"><FiGithub size={30} className="cursor-pointer hover:text-indigo-100" /></a>
+                    <a href="https://www.instagram.com/thesohailjafri" target="_blank"><SiInstagram size={30} className="cursor-pointer hover:text-indigo-100" /></a>
+                    <a href="https://github.com/thesohailjafri" target="_blank"><SiGithub size={30} className="cursor-pointer hover:text-indigo-100" /></a>
+                    <a href="https://www.linkedin.com/in/thesohailjafri" target="_blank"><SiLinkedin size={30} className="cursor-pointer hover:text-indigo-100" /></a>
+                    <a href="https://twitter.com/thesohailjafri" target="_blank"><SiTwitter size={30} className="cursor-pointer hover:text-indigo-100" /></a>
+
+
                 </div>
 
             </div>

@@ -57,10 +57,11 @@ function Projects() {
                     Projects
                     <span className="text-green-300"> ]</span>
                 </h4>
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-3 gap-4">
                     {proAry.map((val, i) => {
                         return (
-                            <div className="bg-indigo-900 bg-opacity-70 p-6 rounded shadow-sm flex flex-col">
+                            <div
+                                className=" bg-indigo-900 bg-opacity-70 p-6 rounded shadow-sm flex flex-col transform translate-y-0 trasition-all duration-100 ease-out hover:-translate-y-2">
                                 <h5 className="text-indigo-100 text-2xl">{val.name}</h5>
                                 <div className="inline-flex gap-x-4 text-sm text-indigo-100 mb-4 mt-2">
                                     {val.git && <a
@@ -74,7 +75,7 @@ function Projects() {
                                 <div className="text-sm flex gap-2 flex-wrap mt-auto pt-4 mb-0">
                                     {val?.tech?.map((val, i) => {
                                         return (
-                                            <span key={i} className="p-2 text-indigo-300 bg-indigo-300 bg-opacity-25 rounded">{val}</span>
+                                            <span key={i} className=" p-2 text-indigo-300 bg-indigo-300 bg-opacity-25 rounded hover:text-green-300 cursor-pointer">{val}</span>
                                         )
                                     })}
                                 </div>
