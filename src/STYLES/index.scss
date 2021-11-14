@@ -17,8 +17,15 @@ strong {
 }
 
 a {
-    @apply cursor-pointer
+    @apply cursor-pointer;
+    @apply text-green-300;
+
+    &:hover {
+        @apply text-indigo-100;
+    }
 }
+
+
 
 html {
     scroll-behavior: smooth;

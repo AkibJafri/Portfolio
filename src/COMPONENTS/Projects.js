@@ -50,20 +50,20 @@ const proAry = [
 
 function Projects() {
     return (
-        <div className="flex gap-y-4 gap-x-8 bg-indigo-900 p-20 mt-20 bg-opacity-30 rounded-md shadow-sm mx-auto">
-            <div className="flex flex-col gap-y-5 text-lg text-indigo-300">
-                <h4 className="font-bold inline text-4xl text-indigo-100 mb-8 font-pop">
+        <div id="Projects" className="flex gap-y-4 gap-x-8 bg-indigo-900 p-8 lg:p-12 mt-20 bg-opacity-30 rounded-md shadow-sm mx-auto">
+            <div className="flex flex-col gap-y-5 text-lg lg:text-xl text-indigo-300">
+                <h4 className="font-bold inline text-2xl md:text-3xl xl:text-4xl text-indigo-100 mb-8 font-pop">
                     <span className="text-green-300">[ </span>
                     Projects
                     <span className="text-green-300"> ]</span>
                 </h4>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
                     {proAry.map((val, i) => {
                         return (
                             <div
                                 className=" bg-indigo-900 bg-opacity-70 p-6 rounded shadow-sm flex flex-col transform translate-y-0 trasition-all duration-100 ease-out hover:-translate-y-2">
-                                <h5 className="text-indigo-100 text-2xl">{val.name}</h5>
-                                <div className="inline-flex gap-x-4 text-sm text-indigo-100 mb-4 mt-2">
+                                <h5 className="text-indigo-100 text-lg lg:text-xl">{val.name}</h5>
+                                <div className="inline-flex gap-x-4 text-base text-indigo-100 mb-4 mt-2">
                                     {val.git && <a
                                         className="inline-flex items-center justify-center gap-x-2"
                                         href={val.git} target="_blank"><SiGithub size={20} className="text-green-300" />Git</a>}
@@ -71,7 +71,7 @@ function Projects() {
                                         className="inline-flex items-center justify-center gap-x-2"
                                         href={val.live} target="_blank"><SiNetlify size={20} className="text-green-300" />Live</a>}
                                 </div>
-                                <p className="text-sm">{val.meta}</p>
+                                <p className="text-lg">{val.meta}</p>
                                 <div className="text-sm flex gap-2 flex-wrap mt-auto pt-4 mb-0">
                                     {val?.tech?.map((val, i) => {
                                         return (
@@ -84,7 +84,14 @@ function Projects() {
                         )
                     })}
                 </div>
-
+                <a
+                    href="https://github.com/thesohailjafri?tab=repositories"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-bold text-xl text-green-300 font-pop inline-flex items-center gap-x-2">
+                    <SiGithub size={30} className="inline" />
+                    View All Projects
+                </a>
             </div>
 
         </div >
