@@ -24,14 +24,14 @@ const scrollTo = (id) => {
 
 function Header() {
     return (
-        <header id="Header" className="hidden lg:flex justify-between items-end py-10">
+        <header id="Header" className="flex justify-between items-end py-10 w-full">
             <h4 className="text-3xl tracking-wider font-pop font-bold text-green-300">TheSohailJafri</h4>
-            <nav>
-                <ul className="flex gap-x-5 font-tech text-xl ">
+            <nav className="hidden lg:inline">
+                <ul className="flex gap-x-5 font-tech text-2xl ">
                     {
                         data.map((val, i) => {
                             return (
-                                <li key={i} className="inline-flex gap-x-2 cursor-pointer font-pop"
+                                <li key={i} className="inline-flex gap-x-1 xl:gap-x-2 cursor-pointer font-pop"
                                     onClick={() => scrollTo(val.p)}
                                 >
                                     <span className="text-green-300">[</span>

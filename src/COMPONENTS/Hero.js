@@ -34,7 +34,7 @@ function Hero() {
     }, [index, who])
     return (
         <div className="
-        flex flex-col lg:flex-row gap-8 bg-indigo-900 p-8 lg:p-12 mt-20 bg-opacity-30 rounded-md shadow-sm mx-auto transition-all
+        flex flex-col lg:flex-row gap-8 bg-indigo-900 p-8 lg:p-12 lg:mt-10 bg-opacity-30 rounded-md shadow-sm mx-auto transition-all
         ">
 
             <div id='hero' className="flex flex-col gap-y-4 max-w-3xl ">
