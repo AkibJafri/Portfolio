@@ -1,0 +1,11 @@
+.bracket {
+  color: var(--accent-color);
+}
+
+.key {
+  color: var(--accent-color);
+}
+
+.heading {
+  margin-bottom: 2rem;
+}

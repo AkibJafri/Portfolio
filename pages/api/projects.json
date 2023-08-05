@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Candle Esencia",
+    "status": "In Progress",
+    "image": "/projects/candle-bnr.png",
+    "description": "A candle e-commerce website with a custom CMS, CRM and payment gateway integration",
+    "tags": [
+      "next",
+      "node",
+      "mysql",
+      "sequelize",
+      "tailwind",
+      "react-query",
+      "prime-react",
+      "razorpay"
+    ],
+    "demo": null,
+    "source_code": null
+  },
+  {
+    "id": 2,
+    "name": "Global IBMS",
+    "status": "Live",
+    "image": "/projects/ibms-bnr.png",
+    "description": "A CRM, SCM, BPM, CMS application for a pharmaceutical company to manage their business",
+    "tags": ["react", "node", "express", "mysql", "redux", "prime-react"],
+    "demo": "http://crm.selcopharma.com/",
+    "source_code": null
+  },
+  {
+    "id": 3,
+    "name": "Dmeter",
+    "status": "Completed",
+    "image": "/projects/dmeter-bnr.png",
+    "description": "A prototype of a restaurant management system with a custom CMS, CRM and payment gateway integration, where resturants and its branch can manage their business",
+    "tags": ["react", "node", "mongodb", "recoil", "prime-react"],
+    "source_code": "https://github.com/thesohailjafri/dmeter",
+    "demo": "https://dmeter-client.onrender.com"
+  },
+  {
+    "id": 4,
+    "name": "Spotify Clone",
+    "status": "Completed",
+    "image": "/projects/spotify-bnr.png",
+    "description": "My attempt to clone spotify web app, with primary focus on UI and UX",
+    "tags": ["next", "css-modules"],
+    "source_code": "https://github.com/thesohailjafri/spotify-clone-v2",
+    "demo": null
+  }
+]
