@@ -1,5 +1,5 @@
 const { Client } = require('@notionhq/client')
-const nodemailer = require('nodemailer')
+const Mailjet = require('node-mailjet')
 
 const notion = new Client({
   auth: process.env.NOTION_API_TOKEN,
@@ -11,34 +11,39 @@ export default async (req, res) => {
   }
   try {
     const { name, email, subject, message } = JSON.parse(req.body)
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.MY_SENDER_EMAIL,
-        pass: process.env.MY_SENDER_EMAIL_PASSWORD,
-      },
+
+    const mailjet = new Mailjet({
+      apiKey: process.env.MJ_APIKEY_PUBLIC,
+      apiSecret: process.env.MJ_APIKEY_PRIVATE,
     })
 
-    const mailOptions = {
-      from: process.env.MY_SENDER_EMAI,
-      to: process.env.MY_RECEIVER_EMAIL,
-      subject: `Message from ${name} | ${subject}`,
-      text: `
-			Hello master, you have a new message from ${name} (${email}):\n
-			\n
-			Subject: ${subject}
-			\n
-			Message: ${message}
-			`,
-    }
-
-    transporter.sendMail(mailOptions, function (error, info) {
-      if (error) {
-        console.log(error)
-      } else {
-        console.log('Email sent: ' + info.response)
-      }
+    const request = await mailjet.post('send', { version: 'v3.1' }).request({
+      Messages: [
+        {
+          From: {
+            Email: process.env.MJ_SENDER_EMAIL,
+            Name: 'Contact Via TSJ',
+          },
+          To: [
+            {
+              Email: process.env.MY_RECEIVER_EMAIL,
+              Name: 'Sohail Jafri',
+            },
+          ],
+          Subject: `Message from ${name} | ${subject}`,
+          TextPart: '',
+          HTMLPart: '',
+        },
+      ],
     })
+
+    request
+      .then((result) => {
+        console.log(result.body)
+      })
+      .catch((err) => {
+        console.log({ err })
+      })
 
     res.status(201).json({ msg: 'Success' })
   } catch (error) {
