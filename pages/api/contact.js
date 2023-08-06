@@ -1,9 +1,5 @@
-const { Client } = require('@notionhq/client')
-const Mailjet = require('node-mailjet')
-
-const notion = new Client({
-  auth: process.env.NOTION_API_TOKEN,
-})
+const sgMail = require('@sendgrid/mail')
+sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 export default async (req, res) => {
   if (req.method !== 'POST') {
@@ -12,37 +8,34 @@ export default async (req, res) => {
   try {
     const { name, email, subject, message } = JSON.parse(req.body)
 
-    const mailjet = new Mailjet({
-      apiKey: process.env.MJ_APIKEY_PUBLIC,
-      apiSecret: process.env.MJ_APIKEY_PRIVATE,
-    })
-
-    const request = await mailjet.post('send', { version: 'v3.1' }).request({
-      Messages: [
-        {
-          From: {
-            Email: process.env.MJ_SENDER_EMAIL,
-            Name: 'Contact Via TSJ',
-          },
-          To: [
-            {
-              Email: process.env.MY_RECEIVER_EMAIL,
-              Name: 'Sohail Jafri',
-            },
-          ],
-          Subject: `Message from ${name} | ${subject}`,
-          TextPart: '',
-          HTMLPart: '',
-        },
-      ],
-    })
-
-    request
-      .then((result) => {
-        console.log(result.body)
+    const msg = {
+      to: process.env.MY_RECEIVER_EMAIL, // Change to your recipient
+      from: process.env.MY_SENDER_EMAIL, // Change to your verified sender
+      subject: `Message from thesohailjafri.com contact form`,
+      text: `
+			Message from thesohailjafri.com contact form
+			\n
+			Name: ${name}
+			Email: ${email}
+			Subject: ${subject}
+			Message: ${message}
+			`,
+      html: `
+			Message from thesohailjafri.com contact form
+			\n
+			Name: ${name}
+			Email: ${email}
+			Subject: ${subject}
+			Message: ${message}
+			`,
+    }
+    sgMail
+      .send(msg)
+      .then((res) => {
+        console.log('Email sent')
       })
-      .catch((err) => {
-        console.log({ err })
+      .catch((error) => {
+        console.error(error)
       })
 
     res.status(201).json({ msg: 'Success' })
