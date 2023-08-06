@@ -115,3 +115,16 @@
 .css-modules:hover {
   background: rgba(21, 114, 182, 0.25);
 }
+
+.sass {
+  border: 2px solid rgb(255, 65, 84);
+}
+.sass:hover {
+  background: rgba(255, 65, 84, 0.25);
+}
+.javascript {
+  border: 2px solid rgb(220, 255, 65);
+}
+.javascript:hover {
+  background: rgba(220, 255, 65, 0.25);
+}
