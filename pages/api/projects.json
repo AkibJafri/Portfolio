@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Candle Esencia",
     "status": "In Progress",
-    "image": "/projects/candle-bnr.png",
+    "image": "/candle-bnr.png",
     "description": "A candle e-commerce website with a custom CMS, CRM and payment gateway integration",
     "tags": [
       "next",
@@ -22,7 +22,7 @@
     "id": 2,
     "name": "Global IBMS",
     "status": "Live",
-    "image": "/projects/ibms-bnr.png",
+    "image": "/ibms-bnr.png",
     "description": "A CRM, SCM, BPM, CMS application for a pharmaceutical company to manage their business",
     "tags": ["react", "node", "express", "mysql", "redux", "prime-react"],
     "demo": "http://crm.selcopharma.com/",
@@ -32,7 +32,7 @@
     "id": 3,
     "name": "Dmeter",
     "status": "Completed",
-    "image": "/projects/dmeter-bnr.png",
+    "image": "/dmeter-bnr.png",
     "description": "A prototype of a restaurant management system with a custom CMS, CRM and payment gateway integration, where resturants and its branch can manage their business",
     "tags": ["react", "node", "mongodb", "recoil", "prime-react"],
     "source_code": "https://github.com/thesohailjafri/dmeter",
@@ -42,10 +42,20 @@
     "id": 4,
     "name": "Spotify Clone",
     "status": "Completed",
-    "image": "/projects/spotify-bnr.png",
+    "image": "/spotify-bnr.png",
     "description": "My attempt to clone spotify web app, with primary focus on UI and UX",
     "tags": ["next", "css-modules"],
     "source_code": "https://github.com/thesohailjafri/spotify-clone-v2",
     "demo": null
+  },
+  {
+    "id": 5,
+    "name": "Space Tourism",
+    "status": "Completed",
+    "image": "/space-bnr.png",
+    "description": "A frontend-mentor.io challenge of a space tourism website",
+    "tags": ["css-modules", "tailwind"],
+    "source_code": "https://github.com/thesohailjafri/fm-space-tourism-website",
+    "demo": "https://thesohailjafri.github.io/fm-space-tourism-website/"
   }
 ]

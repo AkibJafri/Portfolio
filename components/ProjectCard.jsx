@@ -5,6 +5,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div className={styles.card}>
       <Image
+        key={project.id}
         className={styles.image}
         src={project.image}
         height={300}
