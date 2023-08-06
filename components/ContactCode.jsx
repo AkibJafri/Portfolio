@@ -4,7 +4,7 @@ const contactItems = [
   {
     social: 'website',
     link: 'thesohailjafri.com',
-    href: 'https://nitinranganath.com',
+    href: 'https://thesohailjafri.com',
   },
   {
     social: 'email',
