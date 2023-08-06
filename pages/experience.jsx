@@ -5,7 +5,7 @@ import styles from '../styles/Experience.module.css'
 const experience = [
   {
     company: 'Appvent',
-    role: 'Co-Founder & CTO',
+    role: 'Software Consultant',
     startDate: new Date('2023-01-01'),
     endDate: new Date(),
     currentlyWorking: true,

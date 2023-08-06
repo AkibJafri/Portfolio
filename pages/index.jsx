@@ -14,12 +14,23 @@ export default function HomePage() {
           <div className={styles.content}>
             <h1 className={styles.name}>Sohail Jafri</h1>
             <h6 className={styles.bio}>Full Stack Web Developer</h6>
-            <Link href="/projects">
-              <button className={styles.button}>View Work</button>
-            </Link>
-            <Link href="/contact">
-              <button className={styles.outlined}>Contact Me</button>
-            </Link>
+            <div className={styles.btnGroup}>
+              <Link href="/experience">
+                <button className={styles.outlined}>Experience</button>
+              </Link>
+              <Link href="/projects">
+                <button className={styles.outlined}>Projects</button>
+              </Link>
+              <Link href="/contact">
+                <button className={styles.outlined}>Contact Me</button>
+              </Link>
+              <a
+                href="https://docs.google.com/document/d/1j78UeVHvKxm8Tk1gZJwkJ19OU0QlvkB_"
+                target="_blank"
+              >
+                <button className={styles.button}>View Resume</button>
+              </a>
+            </div>
           </div>
           <Illustration className={styles.illustration} />
         </div>
