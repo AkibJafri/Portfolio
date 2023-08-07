@@ -1,6 +1,9 @@
-const sgMail = require('@sendgrid/mail')
-sgMail.setApiKey(process.env.SENDGRID_API_KEY)
-
+const Mailjet = require('node-mailjet')
+const mailjet = Mailjet.apiConnect(
+  process.env.MJ_APIKEY_PUBLIC,
+  process.env.MJ_APIKEY_PRIVATE,
+)
+// mailjet
 export default async (req, res) => {
   if (req.method !== 'POST') {
     return res.status(405).json({ msg: 'Only POST requests are allowed' })
@@ -8,34 +11,46 @@ export default async (req, res) => {
   try {
     const { name, email, subject, message } = JSON.parse(req.body)
 
-    const msg = {
-      to: process.env.MY_RECEIVER_EMAIL, // Change to your recipient
-      from: process.env.MY_SENDER_EMAIL, // Change to your verified sender
-      subject: `Message from thesohailjafri.com contact form`,
-      text: `
-			Message from thesohailjafri.com contact form
-			\n
-			Name: ${name}
-			Email: ${email}
-			Subject: ${subject}
-			Message: ${message}
-			`,
-      html: `
-			Message from thesohailjafri.com contact form
-			\n
-			Name: ${name}
-			Email: ${email}
-			Subject: ${subject}
-			Message: ${message}
-			`,
-    }
-    sgMail
-      .send(msg)
-      .then((res) => {
-        console.log('Email sent')
+    const request = mailjet.post('send', { version: 'v3.1' }).request({
+      Messages: [
+        {
+          From: {
+            Email: process.env.MY_SENDER_EMAIL,
+            Name: 'No Reply',
+          },
+          To: [
+            {
+              Email: process.env.MY_RECEIVER_EMAIL,
+              Name: 'Sohail Jafri',
+            },
+          ],
+          Subject: `Message from thesohailjafri.com contact form`,
+          TextPart: `
+							Name: ${name}
+							\n
+							Email: ${email}
+							\n
+							Subject: ${subject}
+							\n
+							Message: ${message}
+							`,
+          HTMLPart: `
+							<p><b>Name:</b> ${name}</p>
+							<p><b>Email:</b> ${email}</p>
+							<p><b>Subject:</b> ${subject}</p>
+							<p><b>Message:</b> ${message}</p>
+							`,
+        },
+      ],
+    })
+
+    request
+      .then((result) => {
+        console.log(result.body)
       })
-      .catch((error) => {
-        console.error(error)
+      .catch((err) => {
+        console.log('Fuckkkkkkk')
+        console.log({ err })
       })
 
     res.status(201).json({ msg: 'Success' })
@@ -44,52 +59,3 @@ export default async (req, res) => {
     res.status(500).json({ msg: 'Failed' })
   }
 }
-// export default async (req, res) => {
-//   if (req.method !== 'POST') {
-//     return res.status(405).json({ msg: 'Only POST requests are allowed' });
-//   }
-//   try {
-//     const { name, email, subject, message } = JSON.parse(req.body);
-//     await notion.pages.create({
-//       parent: {
-//         database_id: process.env.NOTION_DATABASE_ID,
-//       },
-//       properties: {
-//         Name: {
-//           title: [
-//             {
-//               text: {
-//                 content: name,
-//               },
-//             },
-//           ],
-//         },
-//         Email: {
-//           email,
-//         },
-//         Subject: {
-//           rich_text: [
-//             {
-//               text: {
-//                 content: subject,
-//               },
-//             },
-//           ],
-//         },
-//         Message: {
-//           rich_text: [
-//             {
-//               text: {
-//                 content: message,
-//               },
-//             },
-//           ],
-//         },
-//       },
-//     });
-//     res.status(201).json({ msg: 'Success' });
-//   } catch (error) {
-//     console.log(error);
-//     res.status(500).json({ msg: 'Failed' });
-//   }
-// };
