@@ -6,7 +6,7 @@ const CustomHead = ({ title }) => {
       <title>{title}</title>
       <meta
         name="description"
-        content="Sohail Jafri is an avid full stack web developer building websites and applications you'd love to use"
+        content="Step into Sohail Jafri's digital realm and explore his wizardry with the MERN stack."
       />
       <meta
         name="keywords"
@@ -15,7 +15,7 @@ const CustomHead = ({ title }) => {
       <meta property="og:title" content="Sohail Jafri's Portfolio" />
       <meta
         property="og:description"
-        content="A full-stack developer building websites that you'd like to use."
+        content="From Code Chaos to Web Wonders: Full Stack Sorcerer!"
       />
       <meta property="og:image" content="https://imgur.com/2FJBIGD.png" />
       <meta property="og:url" content="https://thesohailjafri.com" />
