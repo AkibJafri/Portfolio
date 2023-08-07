@@ -211,3 +211,9 @@ export default function Experience() {
     </div>
   )
 }
+
+export async function getStaticProps() {
+  return {
+    props: { title: 'Experience' },
+  }
+}
