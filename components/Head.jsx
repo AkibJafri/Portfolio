@@ -17,7 +17,7 @@ const CustomHead = ({ title }) => {
         property="og:description"
         content="From Code Chaos to Web Wonders: Full Stack Sorcerer!"
       />
-      <meta property="og:image" content="https://imgur.com/2FJBIGD.png" />
+      <meta property="og:image" content="https://i.imgur.com/2FJBIGD.png" />
       <meta property="og:url" content="https://thesohailjafri.com" />
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
