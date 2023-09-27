@@ -4,8 +4,8 @@
 
 - [ ] Themes and customizations
   - [x] GitHub Dark (default)
-  - [ ] One Dark Pro
-  - [x] Dracula
+  - [x] One Dark Pro
+  - [ ] Dracula
   - [x] Ayu
   - [x] Nord
 - [ ] Interactive custom terminal
