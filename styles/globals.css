@@ -14,61 +14,61 @@ a {
 }
 
 /* Tags */
-.react {
+.ReactJS {
   border: 0.1rem solid rgb(97, 218, 251);
 }
-.react:hover {
+.ReactJS:hover {
   background: rgba(97, 218, 251, 0.25);
 }
 /* use green shade for mysql */
-.mysql {
+.MySql {
   border: 0.1rem solid rgb(0, 207, 21);
 }
-.mysql:hover {
+.MySql:hover {
   background: rgba(0, 207, 21, 0.25);
 }
-.sequelize {
+.Sequelize {
   border: 0.1rem solid rgb(0, 123, 255);
 }
-.sequelize:hover {
+.Sequelize:hover {
   background: rgba(0, 123, 255, 0.25);
 }
-.prime-react {
+.Prime-React {
   border: 0.1rem solid rgb(0, 157, 255);
 }
-.prime-react:hover {
+.Prime-React:hover {
   background: rgba(0, 157, 255, 0.25);
 }
-.node {
+.NodeJS {
   border: 0.1rem solid rgb(93, 160, 12);
 }
-.node:hover {
+.NodeJS:hover {
   background: rgba(93, 160, 12, 0.25);
 }
-.express {
+.Express {
   border: 0.1rem solid rgb(42, 133, 0);
 }
-.express:hover {
+.Express:hover {
   background: rgba(42, 133, 0, 0.25);
 }
 
-.mongodb {
+.MongoDB {
   border: 0.1rem solid rgb(67, 153, 52);
 }
-.mongodb:hover {
+.MongoDB:hover {
   background: rgba(67, 153, 52, 0.25);
 }
 
-.redux {
+.Redux {
   border: 0.1rem solid rgb(118, 74, 188);
 }
-.redux:hover {
+.Redux:hover {
   background: rgba(118, 74, 188, 0.25);
 }
-.recoil {
+.Recoil {
   border: 0.1rem solid rgb(118, 74, 188);
 }
-.recoil:hover {
+.Recoil:hover {
   background: rgba(118, 74, 188, 0.25);
 }
 
@@ -79,57 +79,85 @@ a {
   background: rgba(82, 143, 240, 0.25);
 }
 
-.material-ui {
+.Material-UI {
   border: 0.1rem solid rgb(25, 118, 210);
 }
-.material-ui:hover {
+.Material-UI:hover {
   background: rgba(25, 118, 210, 0.25);
 }
 
-.bulma {
+.Bulma {
   border: 0.1rem solid rgb(0, 209, 178);
 }
-.bulma:hover {
+.Bulma:hover {
   background: rgb(0, 209, 178, 0.25);
 }
 
-.next {
+.NextJS {
   border: 2px solid rgb(0, 112, 243);
 }
-.next:hover {
+.NextJS:hover {
   background: rgba(0, 112, 243, 0.25);
 }
 
-.tailwind {
+.Chakra-UI {
+  border: 2px solid rgb(0, 243, 101);
+}
+.Chakra-UI:hover {
+  background: rgba(0, 243, 101, 0.25);
+}
+
+.SSG {
+  border: 2px solid rgb(21, 116, 61);
+}
+.SSG:hover {
+  background: rgba(21, 116, 61, 0.25);
+}
+
+.SSR {
+  border: 2px solid rgb(177, 101, 50);
+}
+.SSR:hover {
+  background: rgba(177, 101, 50, 0.25);
+}
+
+.Programatic-SEO {
+  border: 2px solid rgb(59, 116, 21);
+}
+.Programatic-SEO:hover {
+  background: rgba(59, 116, 21, 0.25);
+}
+
+.Tailwind-UI {
   border: 2px solid rgb(6, 182, 212);
 }
-.tailwind:hover {
+.Tailwind-UI:hover {
   background: rgba(6, 182, 212, 0.25);
 }
 
-.react-query {
+.React-query {
   border: 2px solid rgb(255, 65, 84);
 }
-.react-query:hover {
+.React-query:hover {
   background: rgba(255, 65, 84, 0.25);
 }
 
-.css-modules {
+.Css-Modules {
   border: 2px solid rgb(21, 114, 182);
 }
-.css-modules:hover {
+.Css-Modules:hover {
   background: rgba(21, 114, 182, 0.25);
 }
 
-.sass {
+.SASS {
   border: 2px solid rgb(255, 65, 84);
 }
-.sass:hover {
+.SASS:hover {
   background: rgba(255, 65, 84, 0.25);
 }
-.javascript {
+.Javascript {
   border: 2px solid rgb(220, 255, 65);
 }
-.javascript:hover {
+.Javascript:hover {
   background: rgba(220, 255, 65, 0.25);
 }
