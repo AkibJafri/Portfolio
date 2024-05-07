@@ -25,7 +25,7 @@ export default function HomePage() {
                 <button className={styles.outlined}>Contact Me</button>
               </Link>
               <a
-                href="https://docs.google.com/document/d/1j78UeVHvKxm8Tk1gZJwkJ19OU0QlvkB_"
+                href="https://docs.google.com/document/d/1uenxzyTzbKYekBxqlkVc5dgcKmxFsPcazP7aMisYzWk"
                 target="_blank"
               >
                 <button className={styles.button}>View Resume</button>

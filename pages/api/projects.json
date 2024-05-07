@@ -20,13 +20,42 @@
     "source_code": null
   },
   {
-    "id": "nSdWcLd",
-    "name": "Selco CRM",
+    "id": "x02hA2e",
+    "name": "Chakra Framer",
+    "status": "Live | Personal Project",
+    "image": "https://imgur.com/3RmtN4C.png",
+    "description": "Code snippets based on Chakra UI and Framer Motion with mind-blowing animation and transitions for cards, backgrounds, buttons, and a lot more.",
+    "tags": [
+      "NextJS",
+      "Chakra-UI",
+      "SSG",
+      "SSR",
+      "Programatic-SEO",
+      "Splitbee",
+      "Framer-Motion",
+      "ThreeJS"
+    ],
+    "demo": "https://chakraframer.com/",
+    "source_code": null
+  },
+  {
+    "id": "x02hA2e",
+    "name": "Webenetic",
     "status": "Live | Client Project",
-    "image": "https://imgur.com/nSdWcLd.png",
-    "description": "A CRM, SCM, BPM, CMS application for a pharmaceutical company to manage their business",
+    "image": "https://imgur.com/Gbospjj.png",
+    "description": "Developed a visually appealing interface that strengthened the company's brand identity, fostering trust and recognition",
+    "tags": ["NextJS", "Chakra-UI", "SSG", "SSR", "Programatic-SEO", "MongoDB"],
+    "demo": "https://webenetic.com/",
+    "source_code": null
+  },
+  {
+    "id": "nSdWcLd",
+    "name": "Selco Pharma",
+    "status": "Live | Client Project",
+    "image": "https://imgur.com/SzYKKM8.png",
+    "description": "A e-commerce and CRM solution for a pharmaceutical company to manage their sales, customer and platform",
     "tags": ["ReactJS", "NodeJS", "Express", "MySql", "Redux", "Prime-React"],
-    "demo": "http://crm.selcopharma.com/",
+    "demo": "http://selcopharma.com/",
     "source_code": null
   },
   {
