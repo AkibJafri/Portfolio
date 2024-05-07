@@ -24,10 +24,7 @@ export default function HomePage() {
               <Link href="/contact">
                 <button className={styles.outlined}>Contact Me</button>
               </Link>
-              <a
-                href="https://docs.google.com/document/d/1uenxzyTzbKYekBxqlkVc5dgcKmxFsPcazP7aMisYzWk"
-                target="_blank"
-              >
+              <a href="/Sohail_Jafri_Resume.pdf" target="_blank">
                 <button className={styles.button}>View Resume</button>
               </a>
             </div>
