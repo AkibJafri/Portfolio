@@ -17,7 +17,7 @@ function Illustration(props) {
         fill="currentColor"
       />
     </svg>
-  );
+  )
 }
 
-export default Illustration;
+export default Illustration

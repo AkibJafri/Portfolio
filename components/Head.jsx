@@ -6,19 +6,19 @@ const CustomHead = ({ title }) => {
       <title>{title}</title>
       <meta
         name="description"
-        content="Step into Sohail Jafri's digital realm and explore his wizardry with the MERN stack."
+        content="Step into Akib Jafri's digital realm and explore his wizardry with the MERN stack."
       />
       <meta
         name="keywords"
-        content="thesohailjafri, Sohail Jafri, sohail, jafri, web developer portfolio, sohail web developer, sohail developer, mern stack, Sohail Jafri portfolio, vscode-portfolio"
+        content="akibjafri, Akib Jafri, akib jafri, web developer portfolio, akib web developer, akib developer, mern stack, akib Jafri portfolio, vscode-portfolio"
       />
-      <meta property="og:title" content="Sohail Jafri's Portfolio" />
+      <meta property="og:title" content="Akib Jafri's Portfolio" />
       <meta
         property="og:description"
         content="From Code Chaos to Web Wonders: Full Stack Sorcerer!"
       />
       <meta property="og:image" content="https://i.imgur.com/2FJBIGD.png" />
-      <meta property="og:url" content="https://thesohailjafri.com" />
+      <meta property="og:url" content="https://akibjafri.com" />
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
   )
@@ -27,5 +27,5 @@ const CustomHead = ({ title }) => {
 export default CustomHead
 
 CustomHead.defaultProps = {
-  title: 'Sohail Jafri',
+  title: 'Akib Jafri',
 }

@@ -12,7 +12,7 @@ export default function HomePage() {
         </div>
         <div className={styles.foreground}>
           <div className={styles.content}>
-            <h1 className={styles.name}>Sohail Jafri</h1>
+            <h1 className={styles.name}>Akib Jafri</h1>
             <h6 className={styles.bio}>Full Stack Web Developer</h6>
             <div className={styles.btnGroup}>
               <Link href="/experience">
@@ -24,7 +24,7 @@ export default function HomePage() {
               <Link href="/contact">
                 <button className={styles.outlined}>Contact Me</button>
               </Link>
-              <a href="/Sohail_Jafri_Resume.pdf" target="_blank">
+              <a href="/Akib_Jafri_Rasume.pdf" target="_blank">
                 <button className={styles.button}>View Resume</button>
               </a>
             </div>

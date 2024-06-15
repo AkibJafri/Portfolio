@@ -9,12 +9,12 @@ const AboutPage = () => {
         <p className={styles.bracket}>{'{'}</p>
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <span className={styles.key}>"name"</span>: "Sohail Jafri",
+          <span className={styles.key}>"name"</span>: "Akib Jafri",
         </p>
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp;
           <span className={styles.key}>"age"</span>:{' '}
-          {differenceInYears(new Date(), new Date('2002-04-27'))},
+          {differenceInYears(new Date(), new Date('2002-07-18'))},
         </p>
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp;
@@ -22,24 +22,19 @@ const AboutPage = () => {
         </p>
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <span className={styles.key}>"education"</span>: "B.E in Information
+          <span className={styles.key}>"education"</span>: "BSC Information
           Technology",
         </p>
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <span className={styles.key}>"degree-college"</span>: "Datta Meghe
-          College of Engineering",
-        </p>
-        <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <span className={styles.key}>"diploma-college"</span>: "Vidyalankar
-          Polytechnic",
+          <span className={styles.key}>"degree-college"</span>: "Rizvi College
+          Of Arts Science And Commerce",
         </p>
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp;
           <span className={styles.key}>"hobbies"</span>:
           <span className={styles.bracket}>[</span>
-          "Coding", "Biking", "Lifting", "Reading", "Anime"
+          "Coding", "Biking", "Lifting"
           <span className={styles.bracket}>]</span>
         </p>
         <p className={styles.bracket}>{'}'}</p>

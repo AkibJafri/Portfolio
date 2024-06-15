@@ -39,16 +39,6 @@
     "source_code": null
   },
   {
-    "id": "x02hA2e",
-    "name": "Webenetic",
-    "status": "Live | Client Project",
-    "image": "https://imgur.com/Gbospjj.png",
-    "description": "Developed a visually appealing interface that strengthened the company's brand identity, fostering trust and recognition",
-    "tags": ["NextJS", "Chakra-UI", "SSG", "SSR", "Programatic-SEO", "MongoDB"],
-    "demo": "https://webenetic.com/",
-    "source_code": null
-  },
-  {
     "id": "nSdWcLd",
     "name": "Selco Pharma",
     "status": "Live | Client Project",
@@ -70,23 +60,22 @@
   },
   {
     "id": "kbKy1y4",
-    "name": "Spotify Clone",
+    "name": "Netflix Clone",
     "status": "Completed | Personal Project",
     "image": "https://imgur.com/kbKy1y4.png",
-    "description": "My attempt to clone spotify web app, with primary focus on UI and UX and to learn more about tailwind css",
-    "tags": ["NextJS", "SASS", "Tailwind-UI"],
-    "source_code": "https://github.com/thesohailjafri/spotify-clone-v2",
+    "description": "My attempt to clone Netflix web app, with primary focus on UI and UX and to learn more about tailwind css",
+    "tags": ["Javascript", "SASS", "Tailwind-UI"],
+    "source_code": "https://github.com/AkibJafri/Netflix",
     "demo": null
   },
   {
     "id": "Its2YTC",
-    "name": "Space Tourism",
+    "name": "Bookmark WebApp",
     "status": "Completed | Frontend Mentor Challenge",
     "image": "https://imgur.com/Its2YTC.png",
-    "description": "A frontend-mentor.io challenge of a space tourism website based on glassmorphism design",
-    "tags": ["SASS", "Css-Modules", "Tailwind-UI"],
-    "source_code": "https://github.com/thesohailjafri/fm-space-tourism-website",
-    "demo": "https://thesohailjafri.github.io/fm-space-tourism-website/"
+    "description": "A frontend-mentor.io challenge of a Bookmark WebApp website based on glassmorphism design",
+    "tags": ["NextJS", "Javascript", "Chakra-UI"],
+    "source_code": "https://github.com/AkibJafri/Fmc-Bookmark"
   },
   {
     "id": "vHqsG9J",

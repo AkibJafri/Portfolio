@@ -21,10 +21,10 @@ export default async (req, res) => {
           To: [
             {
               Email: process.env.MY_RECEIVER_EMAIL,
-              Name: 'Sohail Jafri',
+              Name: 'Akib Jafri',
             },
           ],
-          Subject: `Message from thesohailjafri.com contact form`,
+          Subject: `Message from Akibjafri.com contact form`,
           TextPart: `
 							Name: ${name}
 							\n

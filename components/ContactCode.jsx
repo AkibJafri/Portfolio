@@ -3,48 +3,43 @@ import styles from '../styles/ContactCode.module.css'
 const contactItems = [
   {
     social: 'website',
-    link: 'thesohailjafri.com',
-    href: 'https://thesohailjafri.com',
+    link: 'akibjafri.com',
+    // href: 'https://thesohailjafri.com',
   },
   {
     social: 'email',
-    link: 'thesohailjafri@gmail.com',
-    href: 'mailto:thesohailjafri@gmail.com',
+    link: 'akibjafri12@gmail.com',
+    href: 'mailto:akibjafri12@gmail.com',
   },
   {
     social: 'github',
-    link: '@thesohailjafri',
-    href: 'https://github.com/thesohailjafri',
+    link: '@akibjafri',
+    href: 'https://github.com/AkibJafri',
   },
   {
     social: 'linkedin',
     link: '@thesohailjafri',
-    href: 'https://www.linkedin.com/in/thesohailjafri/',
+    href: 'https://www.linkedin.com/in/Akibjafri/',
   },
   {
     social: 'instagram',
-    link: '@thesohailjafri',
-    href: 'https://www.instagram.com/thesohailjafri',
+    link: '@akibjafri',
+    href: 'https://www.instagram.com/its_akib_jafri',
   },
   {
     social: 'twitter',
-    link: '@thesohailjafri',
-    href: 'https://www.twitter.com/thesohailjafri',
+    link: '@akibjafri',
+    href: 'https://www.twitter.com/akibjafri',
   },
   {
     social: 'hacker-rank',
-    link: '@thesohailjafri',
-    href: 'https://www.hackerrank.com/thesohailjafri',
-  },
-  {
-    social: 'leet-code',
-    link: '@thesohailjafri',
-    href: 'https://leetcode.com/thesohailjafri/',
+    link: '@akibjafri',
+    href: 'https://www.hackerrank.com/profile/jafriakib12',
   },
   {
     social: 'frontend-mentor',
-    link: '@thesohailjafri',
-    href: 'https://www.frontendmentor.io/profile/thesohailjafri/solutions/',
+    link: '@akibjafri',
+    href: 'https://www.frontendmentor.io/profile/akibjafri/solutions/',
   },
 ]
 
