@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "v": "node -v"
+    "v": "node -v",
+    "build": "your-build-command"
   },
   "dependencies": {
     "date-fns": "^2.30.0",
