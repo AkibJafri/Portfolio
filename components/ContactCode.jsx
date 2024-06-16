@@ -4,7 +4,7 @@ const contactItems = [
   {
     social: 'website',
     link: 'akibjafri.com',
-    // href: 'https://thesohailjafri.com',
+    // href: 'https://akibjafri.com',
   },
   {
     social: 'email',
@@ -18,7 +18,7 @@ const contactItems = [
   },
   {
     social: 'linkedin',
-    link: '@thesohailjafri',
+    link: '@akibjafri',
     href: 'https://www.linkedin.com/in/Akibjafri/',
   },
   {

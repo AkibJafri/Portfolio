@@ -21,22 +21,20 @@
   },
   {
     "id": "x02hA2e",
-    "name": "Chakra Framer",
+    "name": "URL Shortening",
     "status": "Live | Personal Project",
     "image": "https://imgur.com/3RmtN4C.png",
-    "description": "Code snippets based on Chakra UI and Framer Motion with mind-blowing animation and transitions for cards, backgrounds, buttons, and a lot more.",
+    "description": "This Bookmark Web-App Is Frontend Project Aimed at Creating a User Friendly Interface For Managing Daily task. User Can Add, Remove And Organize Bookmarks Efficiently, Enhance Their Browsing Experience.",
     "tags": [
       "NextJS",
       "Chakra-UI",
-      "SSG",
-      "SSR",
       "Programatic-SEO",
       "Splitbee",
       "Framer-Motion",
       "ThreeJS"
     ],
-    "demo": "https://chakraframer.com/",
-    "source_code": null
+    "demo": "https://fmc-bookmark-landing-page-czet.vercel.app/",
+    "source_code": "https://github.com/AkibJafri/Fmc-Bookmark"
   },
   {
     "id": "nSdWcLd",
@@ -55,7 +53,7 @@
     "image": "https://imgur.com/lp5gVBP.png",
     "description": "Another challenge from frontend-mentor.io, a rock paper scissors game with a twist, where you can play against bot with a score board to keep track of your score",
     "tags": ["SASS", "Javascript"],
-    "source_code": "https://github.com/thesohailjafri/rock-paper-scissors-master",
+    "source_code": null,
     "demo": "https://rock-paper-scissors-master-fm.netlify.app/"
   },
   {
@@ -73,9 +71,9 @@
     "name": "Bookmark WebApp",
     "status": "Completed | Frontend Mentor Challenge",
     "image": "https://imgur.com/Its2YTC.png",
-    "description": "A frontend-mentor.io challenge of a Bookmark WebApp website based on glassmorphism design",
+    "description": "Independently developed projects using The Next.js And Chakra UI,handling database design, API construction, and frontend interface creation, It features browser storage to persist shortened links, along with orm validation and one-click copy functionality.",
     "tags": ["NextJS", "Javascript", "Chakra-UI"],
-    "source_code": "https://github.com/AkibJafri/Fmc-Bookmark"
+    "source_code": "https://github.com/AkibJafri/URL-shortening-API"
   },
   {
     "id": "vHqsG9J",
@@ -84,7 +82,7 @@
     "image": "https://imgur.com/vHqsG9J.png",
     "description": "A degres college 2nd year project, a news site to display data from rapid API new scrapper API with support for dark theme, for that late night reading",
     "tags": ["ReactJS", "SASS", "Tailwind-UI"],
-    "source_code": "https://github.com/thesohailjafri/NewsSite",
+    "source_code": null,
     "demo": "https://project-newsday.netlify.app/#/"
   },
   {
@@ -94,7 +92,7 @@
     "image": "https://imgur.com/If0i8Rj.png",
     "description": "Final year project prototype of a restaurant management system with a custom CMS, CRM and payment gateway integration, where resturants and its branch can manage their business",
     "tags": ["ReactJS", "NodeJS", "MongoDB", "Recoil", "Prime-React"],
-    "source_code": "https://github.com/thesohailjafri/dmeter",
+    "source_code": null,
     "demo": "https://dmeter-client.onrender.com"
   }
 ]
