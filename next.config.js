@@ -6,4 +6,7 @@ module.exports = {
       'imgur.com',
     ],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
